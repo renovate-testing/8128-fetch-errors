@@ -12,7 +12,7 @@ repositories {
     jcenter()
 
     maven {
-        url = uri("https://example.com/")
+        url "https://example.com/"
         credentials {
             username = 'example'
             password = 'hidden-example-password'
