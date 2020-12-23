@@ -1,0 +1,30 @@
+
+
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.20'
+    id 'io.gitlab.arturbosch.detekt' version '1.14.2'
+}
+
+
+repositories {
+    mavenCentral()
+    jcenter()
+
+    maven {
+        url = uri("https://example.com/")
+        credentials {
+            username = 'example'
+            password = 'hidden-example-password'
+        }
+    }
+}
+
+dependencies {
+    testImplementation group: 'com.tngtech.archunit', name: 'archunit-junit5-api', version: '0.14.1'
+    testRuntimeOnly group: 'com.tngtech.archunit', name: 'archunit-junit5-engine', version: '0.14.1'
+
+    detektPlugins group: 'io.gitlab.arturbosch.detekt', name: 'detekt-formatting', version: '1.14.2'
+
+    detektPlugins group: 'io.gitlab.arturbosch.detekt', name: 'detekt-formatting', version: '1.11.0'
+}
