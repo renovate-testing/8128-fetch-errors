@@ -3,6 +3,10 @@
     "config:base"
   ],
 
+  "gradle": {
+    "enabled": false
+  },
+  
   "gradle-lite": {
     "enabled": true
   },
